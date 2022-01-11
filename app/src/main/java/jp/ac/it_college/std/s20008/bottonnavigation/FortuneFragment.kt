@@ -15,7 +15,6 @@ import androidx.annotation.WorkerThread
 import androidx.core.os.HandlerCompat
 import androidx.navigation.fragment.navArgs
 import jp.ac.it_college.std.s20008.bottonnavigation.databinding.FragmentFortuneBinding
-import jp.ac.it_college.std.s20008.bottonnavigation.R
 import org.json.JSONObject
 import java.io.BufferedReader
 import java.io.InputStream
@@ -32,6 +31,8 @@ class FortuneFragment : Fragment() {
 
     private var _binding: FragmentFortuneBinding? = null
     private val binding get() = _binding!!
+
+
 
 
     @RequiresApi(Build.VERSION_CODES.O)

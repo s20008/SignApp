@@ -40,7 +40,7 @@
             motion:layout_constraintStart_toStartOf="parent" >
             <CustomAttribute
                 motion:attributeName="textColor"
-                motion:customColorValue="@color/black" />
+                motion:customColorValue="@color/material_on_primary_disabled" />
         </Constraint>
     </ConstraintSet>
 
@@ -67,7 +67,7 @@
             motion:layout_constraintStart_toStartOf="parent" >
             <CustomAttribute
                 motion:attributeName="textColor"
-                motion:customColorValue="@android:color/darker_gray" />
+                motion:customColorValue="@android:color/background_light" />
         </Constraint>
     </ConstraintSet>
 </MotionScene>

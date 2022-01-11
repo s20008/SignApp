@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/moonback"
     tools:context=".FortuneFragment">
 
     <RatingBar
@@ -40,7 +41,6 @@
         android:id="@+id/signImage"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -53,6 +53,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/signName"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signImage" />
@@ -64,6 +65,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/money"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/moneyBar"
         app:layout_constraintEnd_toStartOf="@+id/moneyBar"
         app:layout_constraintHorizontal_bias="0.5"
@@ -85,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="270dp" />
+        app:layout_constraintGuide_begin="221dp" />
 
     <TextView
         android:id="@+id/jobText"
@@ -94,6 +96,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/job"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/jobBar"
         app:layout_constraintEnd_toStartOf="@+id/jobBar"
         app:layout_constraintHorizontal_bias="0.5"
@@ -107,6 +110,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/love"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/loveBar"
         app:layout_constraintEnd_toStartOf="@+id/loveBar"
         app:layout_constraintStart_toStartOf="parent"
@@ -119,30 +123,49 @@
         android:layout_marginTop="8dp"
         android:text="@string/total"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/totalBar"
         app:layout_constraintEnd_toStartOf="@+id/totalBar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/totalBar" />
 
-    <TextView
-        android:id="@+id/adviceText"
+    <androidx.cardview.widget.CardView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/advice"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#5975A0"
+        app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/totalBar" />
+        app:layout_constraintTop_toBottomOf="@+id/totalBar">
 
-    <TextView
-        android:id="@+id/adviceBox"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="@string/advice"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/adviceText" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/advice"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adviceBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/text_view_shape"
+                android:backgroundTint="#CED1D9"
+                android:text="@string/advice_message"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

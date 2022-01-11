@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">星の空</string>
+    <string name="title_home">十二星座群</string>
+    <string name="title_dashboard">図鑑</string>
+    <string name="title_fortune">今日の運勢</string>
+    <string name="signName">星座</string>
+    <string name="signName1">牡羊座\n3.21 ~ 4.19</string>
+    <string name="signName2">牡牛座\n4.20 ~ 5.20</string>
+    <string name="signName3">双子座\n5.21 ~ 6.21</string>
+    <string name="signName4">蟹座\n6.21 ~ 7.22</string>
+    <string name="signName5">獅子座\n7.23 ~ 8.22</string>
+    <string name="signName6">乙女座\n8.23 ~ 9.22</string>
+    <string name="signName7">天秤座\n9.23 ~ 10.23</string>
+    <string name="signName8">蠍座\n10.24 ~ 11.21</string>
+    <string name="signName9">射手座\n11.22 ~ 12.21</string>
+    <string name="signName10">山羊座\n12.22 ~ 1.19</string>
+    <string name="signName11">水瓶座\n1.20 ~ 2.18</string>
+    <string name="signName12">魚座\n2.19 ~ 3.20</string>
+    <string name="job">仕事運</string>
+    <string name="money">金運</string>
+    <string name="love">恋愛運</string>
+    <string name="total">総合評価</string>
+    <string name="advice">アドバイス</string>
+    <string name="app_login_name">ようこそ、星の空へ</string>
+    <string name="nav_home">ホーム</string>
+    <string name="title_signbook">星座取り扱い</string>
+</resources>
