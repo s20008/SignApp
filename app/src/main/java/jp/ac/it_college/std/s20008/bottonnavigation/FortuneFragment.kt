@@ -32,9 +32,6 @@ class FortuneFragment : Fragment() {
     private var _binding: FragmentFortuneBinding? = null
     private val binding get() = _binding!!
 
-
-
-
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreateView(
         inflater: LayoutInflater,
