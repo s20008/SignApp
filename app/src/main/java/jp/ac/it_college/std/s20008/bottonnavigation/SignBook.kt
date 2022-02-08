@@ -3,6 +3,7 @@ package jp.ac.it_college.std.s20008.bottonnavigation
 import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.os.Looper
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -41,6 +42,9 @@ class SignBook : Fragment() {
 
         _binding = FragmentSignBookBinding.inflate(inflater, container, false)
 
+        binding.local.visibility = View.INVISIBLE
+
+        TimeLeftCountdown().start()
 
         signUrl()
         fortuneTelling()
@@ -120,6 +124,17 @@ class SignBook : Fragment() {
 
             }
 
+        }
+    }
+
+    inner class TimeLeftCountdown : CountDownTimer(3000, 1000) {
+        override fun onTick(millisUntilFinished: Long) {
+
+        }
+
+        override fun onFinish() {
+            binding.local.visibility = View.VISIBLE
+            binding.progressBar2.visibility = View.INVISIBLE
         }
     }
     private fun is2String(stream: InputStream): String {

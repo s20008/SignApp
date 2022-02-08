@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../Library/Android/sdk/platforms/android-31/data/res/drawable/ratingbar_holo_light.xml" value="0.20555555555555555" />
         <entry key="app/src/main/res/drawable/ic_sun.xml" value="0.14814814814814814" />
         <entry key="app/src/main/res/drawable/text_view_shape.xml" value="0.18518518518518517" />
         <entry key="app/src/main/res/layout/activity_flash.xml" value="0.1" />
@@ -17,7 +18,9 @@
         <entry key="app/src/main/res/layout/fragment_fortune2.xml" value="0.16354166666666667" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_sign_book.xml" value="0.22864583333333333" />
+        <entry key="app/src/main/res/layout/fragment_sign_book2.xml" value="0.14266304347826086" />
         <entry key="app/src/main/res/layout/item_sign_gv.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/loading_now.xml" value="0.1859375" />
         <entry key="app/src/main/res/layout/pic_icon_layout.xml" value="0.22" />
         <entry key="app/src/main/res/layout/uranai_icon_layout.xml" value="0.24427083333333333" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.12239583333333333" />

@@ -3,6 +3,7 @@ package jp.ac.it_college.std.s20008.bottonnavigation
 import android.animation.ObjectAnimator
 import android.os.Build
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.os.Looper
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -39,6 +40,11 @@ class FortuneFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentFortuneBinding.inflate(inflater, container, false)
+
+        binding.fragment.visibility = View.INVISIBLE
+
+        //ここにloadingを動かす命令を記述
+        TimeLeftCountdown().start()
 
         signImage()
         fortuneTelling()
@@ -135,6 +141,21 @@ class FortuneFragment : Fragment() {
 
         }
     }
+
+    //loadingはここから
+
+    inner class TimeLeftCountdown : CountDownTimer(2000, 1000) {
+        override fun onTick(millisUntilFinished: Long) {
+        }
+
+        override fun onFinish() {
+            binding.fragment.visibility = View.VISIBLE
+            binding.progressBar3.visibility = View.INVISIBLE
+        }
+
+    }
+
+    //ここまで
     private fun is2String(stream: InputStream): String {
         val sb = StringBuilder()
         val reader = BufferedReader(InputStreamReader(stream, "UTF-8"))
